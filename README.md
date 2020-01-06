@@ -21,12 +21,7 @@ The port is :8000 by default for Repl.it compatibility, but this can be changed 
 
 ### Repl.it
 
-- First, import this Github repository (HarrisonLKatz/Go-CORS-Proxy) into a new Repl.
-- Then, edit your .replit file to contain the following:
-```
-run = "go run CORSproxy.go"
-language = "go"
-```
+Just import this Github repository (HarrisonLKatz/Go-CORS-Proxy) into a new Repl and it will work out of the box!
 
 ## Usage
 
