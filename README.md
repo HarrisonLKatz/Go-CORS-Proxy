@@ -10,7 +10,7 @@ Use [git](https://git-scm.com) to clone this repository.
 git clone https://github.com/HarrisonLKatz/Go-CORS-Proxy.git
 ```
 
-## Usage
+## Running
 
 ### Locally
 
@@ -27,6 +27,12 @@ The port is :8000 by default for Repl.it compatibility, but this can be changed 
 run = "go run CORSproxy.go"
 language = "go"
 ```
+
+## Usage
+
+Simply prepend the server's URL to the URL you are trying to bypass CORS on. Do not forget to include protocal!
+
+For example, if I was using https://CORS-Proxy.codek1.repl.co as the server and wanted to bypass CORS on example.com, I would link to https://CORS-Proxy.codek1.repl.co/https://example.com.
 
 ## Contributing
 Pull requests are both welcomed and very much appreciated.
