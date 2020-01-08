@@ -8,7 +8,7 @@ import (
 func main() {
   http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
     w.Header().Set("Access-Control-Allow-Origin", "*")
-    parsedURL := regexp.MustCompile(`^\/(.+:\/)?(.*)`).FindStringSubmatch(r.URL.Path)
+    parsedURL := regexp.MustCompile(`^\/(.+:\/)?\/*(.*)`).FindStringSubmatch(r.URL.Path)
     if (parsedURL[1] != "") {
       parsedURL[2] = parsedURL[1] + "/" + parsedURL[2]
     }
